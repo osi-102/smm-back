@@ -27,8 +27,7 @@ exports.signup = BigPromise(async (req, res, next) => {
             crop: "scale",
         });
     }
-    
-
+    console.log(result);
     const user = await User.create({
         firstname,
         lastname,
