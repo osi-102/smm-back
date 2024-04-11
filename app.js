@@ -28,6 +28,7 @@ app.use(morgan('common'));
 app.use(cors({
     origin: ['https://smm-two.vercel.app', 'http://localhost:3000'],
     methods: ['POST', 'GET', 'PUT', 'DELETE', 'PATCH'],
+    credentials: true
 }));
 
 // import all routes here
